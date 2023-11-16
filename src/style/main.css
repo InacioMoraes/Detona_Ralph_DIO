@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url("../imagens/muro\ II.jpg")
+    background-image: url("../imagens/muro.png");
 
 }
 
@@ -41,7 +41,7 @@
     height: 150px;
     width: 150px;
     border: 1px solid black;
-    background-color: rgb(149, 234, 234);
+    background-color: rgb(12, 60, 217);
 }
 .enemy{
     background-image: url(../imagens/Ralph.png);
