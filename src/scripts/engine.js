@@ -1,9 +1,9 @@
 const state = {
     view:{
         squares: document.querySelectorAll(".square"),
-        enemy: document.querySelectorAll(".enemy"),
-        timeLeft: document.querySelectorAll("#time-left"),
-        score: document.querySelectorAll("#score"),
+        enemy: document.querySelector(".enemy"),
+        timeLeft: document.querySelector("#time-left"),
+        score: document.querySelector("#score"),
     }, 
     values:{ timerId: null,
         countDownTimerId: setInterval(countDown, 1000),
@@ -41,7 +41,7 @@ function randomSquare(){
 }
 
 function moveEnemy(){
-    state.values.timeId = setInterval(randomSquare, state.values.gameVelocity);
+    state.values.timerId = setInterval(randomSquare, state.values.gameVelocity);
 }
 
 function addlistnerHitBox() {
